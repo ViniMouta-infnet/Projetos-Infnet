@@ -1,0 +1,9 @@
+nome = prompt('Digite o seu nome:');
+salarioBruto = prompt('Digite o seu salário bruto:');
+gratific = prompt('Digite a sua gratificação:');
+desconto = prompt('Digite o valor dos descontos:');
+anoContratacao = prompt('Digite o ano da sua contratação:');
+salarioLiquido = (Number(salarioBruto) + Number(gratific) - Number(desconto)) * Number(1.2) + (new Date().getFullYear() - Number(anoContratacao)) * Number(150);
+mensagem = ('O funcionário ' + nome + ' recebe um salário líquido de R$ ' + salarioLiquido + '.');
+console.log(mensagem);
+alert(mensagem);
